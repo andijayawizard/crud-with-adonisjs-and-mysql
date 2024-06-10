@@ -18,6 +18,8 @@ const globalMiddleware = [
   'Adonis/Middleware/Shield',
   'Adonis/Middleware/AuthInit',
   'App/Middleware/ConvertEmptyStringsToNull',
+  // 'App/Middleware/Authenticate',
+  // 'App/Middleware/RedirectIfAuthenticated'
 ]
 
 /*
@@ -39,7 +41,9 @@ const globalMiddleware = [
 */
 const namedMiddleware = {
   auth: 'Adonis/Middleware/Auth',
-  guest: 'Adonis/Middleware/AllowGuestOnly'
+  guest: 'Adonis/Middleware/AllowGuestOnly',
+  Authenticate: 'App/Middleware/Authenticate',
+  RedirectIfAuthenticated: 'App/Middleware/RedirectIfAuthenticated',
 }
 
 /*
